@@ -5,18 +5,17 @@
 
 html,
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family: sans-serif;
   height: 100%;
-  width: 100%;
 }
 
 body {
-  background: #1d1d1d;
+  background-image: linear-gradient(180deg, #1d1d1d, #1e2033);
 }
 
 a {
   text-decoration: none;
-  color: #ef653c;
+  color: #ffb9a4;
 }
 
 .header {
@@ -24,12 +23,17 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px;
-  background: rgb(71, 70, 70);
+  height: 10%;
+  padding: 10px;
+  background: #1d1d1e;
+  box-shadow: 0 3px #00000029;
 }
 
-.header a {
-  font-size: 2em;
+.header img {
+  border-radius: 50%;
+  margin: auto;
+  width: 50px;
+  height: 50px;
 }
 
 .menu {
@@ -48,46 +52,59 @@ a {
 }
 
 .filas {
-  text-align: center;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
   padding: 20px;
+  text-align: center;
 }
 
 .filas h3 {
-  margin: 20px 0 30px 0;
-  font-size: 2em;
-  color: #ef653c;
+  margin: 10px 0 30px 0;
+  color: #ffb9a4;
+  font-weight: normal;
 }
 
 .filas table {
-  margin: 0 auto;
+  margin: auto;
   color: #fff;
   border-collapse: collapse;
-  overflow: scroll;
   text-align: center;
+  font-size: 14px;
 }
 
 .filas table tr:nth-child(even) {
-  background: rgb(63, 60, 60);
+  background: #090a15;
 }
 
-.filas table th {
-  background: #ef653c;
-  font-size: 1.2em;
-  color: #1d1d1d;
+.filas table tr:nth-child(odd) {
+  background: #0b0d1b;
 }
 
-.filas th,
-td {
-  padding: 25px 20px;
+.filas td {
+  padding: 10px 10px;
+}
+
+.foto {
+  border: 3px solid #f0673e;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.jogo {
+  border-left: 2px solid #1d1d1d;
 }
 
 .filas button {
   margin-top: 25px;
-  background: none;
+  background: #ffb9a4;
   outline: none;
-  padding: 15px;
-  color: #ef653c;
-  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  color: #000;
   font-size: 1em;
-  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
 }
