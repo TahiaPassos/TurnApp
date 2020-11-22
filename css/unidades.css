@@ -1,70 +1,112 @@
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Neue Haas Grotesk", sans-serif;
-}
-
-body {
-  background-image: linear-gradient(to bottom, #1d1d1d, #1e2033);
-  color: #ffb9a4;
-}
-
 .header {
+  position: fixed;
+  margin-top: -100px;
   width: 100%;
   height: 10%;
   background: #1d1d1e;
   margin-bottom: 1em;
   display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 3px #00000029;
 }
 
 .header img {
-  margin: auto;
+  width: 47px;
+  height: 47px;
 }
 
 .container {
-  margin: auto;
+  margin: 100px auto 100px auto;
   text-align: center;
 }
 
+#welcome {
+  font-family: Neue75;
+  font-size: 18px;
+}
+
+#nome {
+  font-family: CaveatBold;
+}
+
+#select {
+  font-family: Neue55;
+  font-size: 24px;
+}
+
 .container-unidades {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
 }
 
-.unidades {
-  margin: auto;
-}
-
-.unidades h3 {
-  margin-top: -2em;
-  font-weight: normal;
-}
-
 .unidades img {
-  max-width: 200px;
+  max-width: 180px;
 }
 
 /* Responsividade */
 
 @media only screen and (max-width: 787px) {
+  .header img {
+    width: 30px;
+    height: 30px;
+  }
+
   .container {
     width: 300px;
   }
 
   .container-unidades {
     width: 260px;
-    margin: auto;
+    margin: 0 auto;
+  }
+
+  #welcome {
+    font-size: 14px;
+  }
+
+  #nome {
+    width: 100px;
+  }
+
+  #select {
+    font-size: 18px;
   }
 }
 
 @media only screen and (min-width: 788px) and (max-width: 979px) {
   .container {
-    width: 700px;
+    width: 500px;
+  }
+  .container-unidades {
+    margin: auto;
+    width: 500px;
+  }
+
+  .unidades img {
+    max-width: 220px;
+  }
+
+  #welcome {
+    font-size: 16px;
+  }
+
+  #nome {
+    width: 150px;
+  }
+
+  #select {
+    font-family: Neue55;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .container {
+    width: 600px;
   }
   .container-unidades {
     margin: auto;
@@ -72,20 +114,6 @@ body {
   }
 
   .unidades img {
-    max-width: 300px;
-  }
-}
-
-@media only screen and (min-width: 980px) {
-  .container {
-    width: 900px;
-  }
-  .container-unidades {
-    margin: auto;
-    width: 800px;
-  }
-
-  .unidades img {
-    max-width: 400px;
+    max-width: 280px;
   }
 }
