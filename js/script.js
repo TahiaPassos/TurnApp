@@ -50,3 +50,7 @@ opcao7.addEventListener('click', function(){
 opcao8.addEventListener('click', function(){
   modalBg.classList.add('bg-active');
 });
+
+
+
+
